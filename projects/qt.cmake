@@ -66,6 +66,7 @@ if(BUILD_OS_OSX)
     ExternalProject_Add(Qt
         URL ${qt_url}
         URL_MD5 ${qt_md5}
+		PATCH_COMMAND patch -p1 < ${CMAKE_SOURCE_DIR}/qt_osx.patch
         CONFIGURE_COMMAND ${_qt_configure_cmd} ${qt_options}
         BUILD_IN_SOURCE 1
         DEPENDS OpenSSL
