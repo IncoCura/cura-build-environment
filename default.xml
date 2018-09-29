@@ -7,35 +7,33 @@
   <default revision="refs/heads/master"
            remote="github"
            sync-c="true"
-		   sync-s="true"
            sync-j="4" />
 
-  <project path="Python" name="KangDroid/Python" revision="kangdroid" />
-  <project path="qt5" name="qt/qt5" revision="v5.10.1" />
-  <project path="sip" name="KangDroid/sip" revision="master" />
-  <project path="pyqt" name="KangDroid/pyqt" revision="master" />
+  <project path="Python" name="IncoCura/Python" revision="kangdroid" />
+  <project path="qt5" name="IncoCura/qt5" revision="for_build" />
+  <project path="sip" name="IncoCura/sip" revision="master" />
+  <project path="pyqt" name="IncoCura/pyqt" revision="master" />
   <project path="libSavitar" name="ultimaker/libSavitar" revision="master" />
-  <project path="protobuf" name="protocolbuffers/protobuf" revision="v3.0.2" />
+  <project path="protobuf" name="protocolbuffers/protobuf" revision="3.0.x" />
   <project path="libArcus" name="ultimaker/libArcus" revision="master" />
-  <project path="cx_Freeze" name="anthony-tuininga/cx_Freeze" revision="5.0" />
-  <project path="python-utils" name="WoLpH/python-utils" revision="v2.3.0" />
-  <project path="netifaces" name="al45tair/netifaces" revision="release_0_10_7" /> 
-  <project path="six" name="benjaminp/six" revision="1.11.0" />
-  <project path="python-zeroconf" name="jstasiak/python-zeroconf" revision="0.17.6" />
-  <project path="urllib3" name="urllib3/urllib3" revision="1.22" />
-  <project path="numpy" name="numpy/numpy" revision="v1.15.0" />
-  <project path="numpy-stl" name="WoLpH/numpy-stl" revision="v2.7.0" />
-  <project path="scipy" name="scipy/scipy" revision="v1.1.0" />
-  <project path="networkx" name="networkx/networkx" revision="networkx-2.1" />
-  <project path="Shapely" name="Toblerity/Shapely" revision="1.6.4.post2" />
-  <project path="six" name="benjaminp/six" revision="1.11.0" />
-  <project path="pycparser" name="eliben/pycparser" revision="release_v2.18" />
-  <project path="idna" name="kjd/idna" revision="v2.6" />
-  <project path="comtypes" name="enthought/comtypes" revision="1.1.4" />
-  <project path="chardet" name="chardet/chardet" revision="3.0.4" />
-  <project path="python-certifi" name="certifi/python-certifi" revision="2018.04.16" />
-  <project path="pyserial" name="pyserial/pyserial" revision="v3.4" />
-  <project path="requests" name="requests/requests" revision="v2.18.4" />
-  <project path="python_trimesh" name="KangDroid/python_trimesh" revision="master" />
+  <project path="cx_Freeze" name="anthony-tuininga/cx_Freeze" revision="v5.x"/>
+  <project path="python-utils" name="IncoCura/python-utils" revision="for_build" />
+  <project path="netifaces" name="IncoCura/netifaces" revision="master" /> 
+  <project path="python-zeroconf" name="IncoCura/python-zeroconf" revision="for_build" />
+  <project path="urllib3" name="IncoCura/urllib3" revision="for_build" />
+  <project path="numpy" name="IncoCura/numpy" revision="for_build" />
+  <project path="numpy-stl" name="WoLpH/numpy-stl" revision="develop" />
+  <project path="scipy" name="scipy/scipy" revision="maintenance/1.1.x" />
+  <project path="networkx" name="IncoCura/networkx" revision="for_build" />
+  <project path="Shapely" name="IncoCura/Shapely" revision="for_build" />
+  <project path="six" name="IncoCura/six" revision="for_build" />
+  <project path="pycparser" name="IncoCura/pycparser" revision="for_build" />
+  <project path="idna" name="IncoCura/idna" revision="for_build" />
+  <project path="comtypes" name="IncoCura/comtypes" revision="for_build" />
+  <project path="chardet" name="IncoCura/chardet" revision="for_build" />
+  <project path="python-certifi" name="IncoCura/python-certifi" revision="for_build" />
+  <project path="pyserial" name="IncoCura/pyserial" revision="for_build" />
+  <project path="requests" name="IncoCura/requests" revision="for_build" />
+  <project path="python_trimesh" name="IncoCura/python_trimesh" revision="master" />
   
 </manifest>
