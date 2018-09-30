@@ -16,7 +16,7 @@
   <project path="libSavitar" name="ultimaker/libSavitar" revision="master" />
   <project path="protobuf" name="protocolbuffers/protobuf" revision="3.0.x" />
   <project path="libArcus" name="ultimaker/libArcus" revision="master" />
-  <project path="cx_Freeze" name="anthony-tuininga/cx_Freeze" revision="v5.x"/>
+  <project path="cx_Freeze" name="IncoCura/cx_Freeze" revision="v5.x"/>
   <project path="python-utils" name="IncoCura/python-utils" revision="for_build" />
   <project path="netifaces" name="IncoCura/netifaces" revision="master" /> 
   <project path="python-zeroconf" name="IncoCura/python-zeroconf" revision="for_build" />
