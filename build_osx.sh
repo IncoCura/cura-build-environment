@@ -22,8 +22,12 @@ if [ -n "${CURA_OSX_SDK_VERSION}" ]; then
     echo "Set CMAKE_OSX_SYSROOT to ${CMAKE_OSX_SYSROOT}"
 fi
 
-export CMAKE_CXX_FLAGS="-stdlib=libc++"
-export CXXFLAGS="-stdlib=libc++"
+export CMAKE_CXX_FLAGS="-stdlib=libc++ -Wno-nonportable-include-path"
+export CMAKE_C_FLAGS="-Wno-nonportable-include-path"
+export CFLAGS="-Wno-nonportable-include-path"
+export CXXFLAGS="-stdlib=libc++ -Wno-nonportable-include-path"
+export CPPFLAGS="-I$(brew --prefix openssl)/include -Wno-nonportable-include-path"
+export LDFLAGS="-L$(brew --prefix openssl)/lib -L/usr/lib"
 
 export CC="/usr/bin/gcc"
 export CXX="/usr/bin/g++"
@@ -36,5 +40,4 @@ export CXX="/usr/bin/g++"
 #mkdir ./build
 cd build
 #cmake .. -DCMAKE_INSTALL_PREFIX=/Users/kangdroid/Desktop/Cura/curadep/ -DCMAKE_BUILD_TYPE=Release
-
 make -j12

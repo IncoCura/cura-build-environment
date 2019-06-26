@@ -16,8 +16,8 @@ if(NOT BUILD_OS_WINDOWS)
     set(scipy_build_command ${Python3_EXECUTABLE} setup.py build)
     set(scipy_install_command ${Python3_EXECUTABLE} setup.py install)
     if(BUILD_OS_OSX)
-        set(scipy_build_command env LDFLAGS="-undefined dynamic_lookup" ${scipy_build_command})
-        set(scipy_install_command env LDFLAGS="-undefined dynamic_lookup" ${scipy_install_command})
+        set(scipy_build_command env LDFLAGS="-undefined dynamic_lookup -L/usr/lib" ${scipy_build_command})
+        set(scipy_install_command env LDFLAGS="-undefined dynamic_lookup -L/usr/lib" ${scipy_install_command})
     endif()
 
     # Scipy

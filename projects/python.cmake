@@ -7,11 +7,6 @@ if(BUILD_OS_OSX)
     # See http://bugs.python.org/issue21381
     # The interpreter crashes when MACOSX_DEPLOYMENT_TARGET=10.7 due to the increased stack size.
     set(python_patch_command sed -i".bak" "9271,9271d" <SOURCE_DIR>/configure)
-    if(CMAKE_OSX_SYSROOT)
-        set(python_configure_command ${python_configure_command} --enable-universalsdk=${CMAKE_OSX_SYSROOT})
-    else()
-        set(python_configure_command ${python_configure_command} --enable-universalsdk)
-    endif()
 endif()
 
 if(BUILD_OS_LINUX)
