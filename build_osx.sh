@@ -25,6 +25,7 @@ fi
 export CMAKE_CXX_FLAGS="-stdlib=libc++ -Wno-nonportable-include-path"
 export CMAKE_C_FLAGS="-Wno-nonportable-include-path"
 export CFLAGS="-Wno-nonportable-include-path"
+export CFLAG="-Wno-nonportable-include-path"
 export CXXFLAGS="-stdlib=libc++ -Wno-nonportable-include-path"
 export CPPFLAGS="-I$(brew --prefix openssl)/include -Wno-nonportable-include-path"
 export LDFLAGS="-L$(brew --prefix openssl)/lib -L/usr/lib"
@@ -33,11 +34,11 @@ export CC="/usr/bin/gcc"
 export CXX="/usr/bin/g++"
 
 # Remove build dir
-#rm -rf ./build
-#rm -rf /Users/kangdroid/Desktop/Cura/curadep/*
+rm -rf ./build
+rm -rf /Users/kangdroid/Desktop/prog/3DPrinting/Cura/curadep/*
 
 # Create build dir
-#mkdir ./build
+mkdir ./build
 cd build
-#cmake .. -DCMAKE_INSTALL_PREFIX=/Users/kangdroid/Desktop/Cura/curadep/ -DCMAKE_BUILD_TYPE=Release
+cmake .. -DCMAKE_INSTALL_PREFIX=/Users/kangdroid/Desktop/prog/3DPrinting/Cura/curadep/ -DCMAKE_BUILD_TYPE=Release
 make -j12
